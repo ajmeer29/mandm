@@ -100,7 +100,8 @@ h1, h2, h3, h4, h5, h6, figure {
   }
 }
 .fh5co-nav #fh5co-logo {
-    font-size: 43px;
+/*    font-size: 43px;*/
+    font-size: calc(1.525rem + 3.3vw);
     margin: 0;
     padding: 0;
     line-height: 50px;
@@ -233,7 +234,7 @@ h1, h2, h3, h4, h5, h6, figure {
     background-size: cover;
     background-position: top center;
     background-repeat: no-repeat;
-    position: fixed;
+    position: relative;
 }
 
 .fh5co-bg {
@@ -331,6 +332,7 @@ h1, h2, h3, h4, h5, h6, figure {
   height: 900px;
   display: table;
   width: 100%;
+    
 }
 @media screen and (max-width: 768px) {
   .fh5co-cover .display-t,
@@ -852,14 +854,14 @@ form label {
 .fh5co-cover .display-tc h1 {
     margin-bottom: 0px;
     font-size: 70px;
-    line-height: 1.5;
+    line-height: normal;
     font-family: "Sacramento", Arial, serif;
 }
 @media screen and (max-width: 768px) {
   #fh5co-header .display-tc h1,
   #fh5co-counter .display-tc h1,
   .fh5co-cover .display-tc h1 {
-    font-size: 40px;
+    font-size: 47px;
     height: auto;
   }
 }
@@ -1031,9 +1033,11 @@ form label {
 }
 
 .couple-wrap {
-  width: 90%;
-  margin: 0 auto;
-  position: relative;
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 0;
+    position: relative;
 }
 @media screen and (max-width: 768px) {
   .couple-wrap {
@@ -1050,14 +1054,14 @@ form label {
   animation: pulse 1s ease infinite;
 }
 .heart i {
-  font-size: 20px;
-  background: #fff;
-  padding: 20px;
-  color: #F14E95;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  border-radius: 50%;
+    font-size: 30px;
+    background: #fff;
+    padding: 20px;
+    color: #F14E95;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
 }
 @media screen and (max-width: 768px) {
   .heart {
@@ -1089,12 +1093,12 @@ form label {
   height: 150px;
 }
 .couple-half .groom img, .couple-half .bride img {
-  width: 150px;
-  height: 150px;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  border-radius: 50%;
+    width: 160px;
+    height: 160px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
 }
 @media screen and (max-width: 480px) {
   .couple-half .groom, .couple-half .bride {
@@ -1108,12 +1112,14 @@ form label {
   }
 }
 .couple-half .groom {
-  float: right;
-  margin-right: 5px;
+    float: right;
+    margin-right: 5px;
+    margin-top: 0px;
 }
 .couple-half .bride {
-  float: left;
-  margin-left: 5px;
+    float: left;
+    margin-left: 5px;
+    margin-bottom: 20px;
 }
 .couple-half .desc-groom {
   padding-right: 180px;
@@ -1187,12 +1193,12 @@ form label {
   margin-bottom: 2em;
 }
 .fh5co-heading h2 {
-  font-size: 60px;
-  margin-bottom: 10px;
-  line-height: 1.5;
-  font-weight: bold;
-  color: #F14E95;
-  font-family: "Sacramento", Arial, serif;
+    font-size: 60px;
+    margin-bottom: -10px;
+    line-height: 1.5;
+    font-weight: bold;
+    color: #F14E95;
+    font-family: "Sacramento", Arial, serif;
 }
 @media screen and (max-width: 768px) {
   .fh5co-heading h2 {
