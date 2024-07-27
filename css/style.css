@@ -5,6 +5,11 @@
   font-weight: normal;
   font-style: normal;
 }
+
+@font-face {
+  font-family: "Sacremento";
+  src: url(/fonts/Sacramento-Regular.ttf);
+}
 /* =======================================================
 *
 * 	Template Style 
@@ -61,13 +66,16 @@ a:hover, a:active, a:focus {
 p {
     margin-bottom: 20px;
     font-size: medium;
+    color: rgba(0,0,0,1.00);
 }
 
 h1, h2, h3, h4, h5, h6, figure {
-  color: #000;
-  font-family: "Work Sans", Arial, sans-serif;
-  font-weight: 400;
-  margin: 0 0 20px 0;
+    color: #FFFFFF;
+    font-family: "Work Sans", Arial, sans-serif;
+    font-weight: 100;
+    margin: 0 0 20px 0;
+    /* [disabled]text-transform: uppercase; */
+    /* [disabled]text-decoration: underline; */
 }
 
 ::-webkit-selection {
@@ -235,14 +243,16 @@ h1, h2, h3, h4, h5, h6, figure {
     background-position: top center;
     background-repeat: no-repeat;
     position: relative;
-}
+    background-color: rgba(0, 0, 0, 0.7);
+} 
 
 .fh5co-bg {
-  background-position: center center;
-  width: 100%;
-  float: left;
-  position: relative;
+    background-position: center center;
+    width: 100%;
+    float: left;
+    position: relative;
 }
+
 
 .fh5co-video {
   height: 450px;
@@ -310,13 +320,13 @@ h1, h2, h3, h4, h5, h6, figure {
 	
 }
 .fh5co-cover .overlay {
-  z-index: 0;
-  position: absolute;
-  bottom: 0;
-  top: 0;
-  left: 0;
-  right: 0;
-  background: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.55);
 }
 .fh5co-cover > .fh5co-container {
   position: relative;
@@ -431,13 +441,14 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 #fh5co-counter .event-wrap h3,
 #fh5co-event .event-wrap h3 {
-  font-size: 20px;
-  color: #fff;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-  display: block;
-  padding-bottom: 20px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
+    font-size: 20px;
+    color: #fff;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    display: block;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
 }
 #fh5co-counter .event-wrap p, #fh5co-counter .event-wrap span,
 #fh5co-event .event-wrap p,
@@ -455,6 +466,13 @@ h1, h2, h3, h4, h5, h6, figure {
   width: 50%;
   float: left;
   margin-bottom: 30px;
+}
+#fh5co-counter .event-wrap .event-col1,
+#fh5co-event .event-wrap .event-col1{
+  width: 50%;
+  float: left;
+  margin-bottom: 30px;
+  justify-content: center;
 }
 
 #fh5co-counter {
@@ -1857,3 +1875,5 @@ form label {
 }
 
 /*# sourceMappingURL=style.css.map */
+.card {
+}
